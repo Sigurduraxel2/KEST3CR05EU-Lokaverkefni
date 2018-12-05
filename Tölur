@@ -1,0 +1,132 @@
+Routera ip tölur:
+	Varða-Skólavarða			10.10.0.0 - 10.10.0.3 /30
+	SkólavarðaInternal-SkólavarðaEdge	10.10.0.4 - 10.10.0.7 /30
+	SkólavarðaEdge-HFJ 1			10.10.0.8 - 10.10.0.11 /30
+	SKólavarðaEdge-HFJ 2			10.10.0.12 - 10.10.0.15 /30
+	SkólavarðaEdge-Hát 1			10.10.0.16 - 10.10.0.19 /30
+	SKólavarðaEdge-Hát 2			10.10.0.20 - 10.10.0.23 /30
+  
+  
+IP routes:	
+	HFJ
+		192.168.64.0 255.255.240.0
+		192.168.99.128 255.255.255.192
+	HÁT	
+		192.168.128.0 255.255.240.0
+		192.168.99.192 255.255.255.192
+    
+    
+Management Net:
+	Vörðu	192.168.99.0 - 192.168.99.63 /26
+	Aðal	192.168.99.64 - 192.168.99.127 /26
+	HFJ	192.168.99.128 - 192.168.99.191 /26
+	Hát	192.168.99.192 - 192.178.99.255 /26
+  
+  
+Starfsmanna Net:
+	Vörðu	192.168.10.0 - 192.168.10.63 /26
+	Aðal	192.168.10.64 - 192.168.10.127 /26
+	HFJ	192.168.10.128 - 192.168.10.191 /26
+	Hát	192.168.10.192 - 192.178.10.255 /26
+  
+  
+Server Net:
+	Starfsmenn 192.168.254.0 - 192.168.99.63 /26
+	DNS	   192.168.254.64 - 192.168.99.127 /26
+	MAIL       192.168.254.128 - 192.168.99.191 /26
+	WEB        192.168.254.192 - 192.178.99.255 /26
+  
+  
+Hafnarfjörður:
+	Gera Vlan		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Gera Trunking		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Ip fyrir management	701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Default gateway		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Ssh			701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Slökkva á portum	701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Password pass.123       701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	Port security
+	Net:
+		701	192.168.71.0 - 192.168.71.127 /25 Management ip 192.168.99.130
+		702	192.168.72.0 - 192.168.72.127 /25 Management ip 192.168.99.130
+		703	192.168.73.0 - 192.168.73.127 /25 Management ip 192.168.99.131
+		704	192.168.74.0 - 192.168.74.127 /25 Management ip 192.168.99.131
+		705	192.168.75.0 - 192.168.75.127 /25 Management ip 192.168.99.132
+		706	192.168.76.0 - 192.168.76.127 /25 Management ip 192.168.99.132
+		starfs	192.168.10.128 - 192.168.10.191 /26 Management ip 192.168.99.133
+		main Management ip 192.168.99.134
+    
+    
+Hátdegisvegur
+	Gera Vlan		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Gera Trunking		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Ip fyrir management	801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Default gateway		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Ssh			801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Slökkva á portum	801 og 802, 803 og 804, 805 og 806, stafsmenn
+	Password pass.123       
+	Port security
+	Net:
+		801	192.168.128.0 - 192.168.128.127 /25 Management ip 192.168.99.194
+		802	192.168.129.0 - 192.168.129.127 /25 Management ip 192.168.99.194
+		803	192.168.130.0 - 192.168.130.127 /25 Management ip 192.168.99.195
+		804	192.168.131.0 - 192.168.131.127 /25 Management ip 192.168.99.195
+		805	192.168.132.0 - 192.168.132.127 /25 Management ip 192.168.99.196
+		806	192.168.133.0 - 192.168.33.127 /25 Management ip 192.168.99.196
+		starfs	192.168.10.192 - 192.168.10.255 /25 Management ip 192.168.99.197
+		main Management ip 192.168.99.198
+    
+Vörðu skóli:
+	Gera Vlan        	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Trunking	 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ip fyrir management	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Default gateway		621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ssh			621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Password pass.123	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Slökkva á portum 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Port security
+	Net:
+		621	192.168.21.0 - 192.168.21.127 /25 Management ip 192.168.99.2
+		622	192.168.22.0 - 192.168.22.127 /25 Management ip 192.168.99.2
+		623	192.168.23.0 - 192.168.23.127 /25 Management ip 192.168.99.3
+		624	192.168.24.0 - 192.168.24.127 /25 Management ip 192.168.99.3
+		625	192.168.25.0 - 192.168.25.127 /25 Management ip 192.168.99.4
+		626	192.168.26.0 - 192.168.26.127 /25 Management ip 192.168.99.4
+		627	192.168.27.0 - 192.168.27.127 /25 Management ip 192.168.99.5
+		628	192.168.28.0 - 192.168.28.127 /25 Management ip 192.168.99.5
+		629	192.168.29.0 - 192.168.29.127 /25 Management ip 192.168.99.6
+		630	192.168.30.0 - 192.168.30.127 /25 Management ip 192.168.99.6
+		631	192.168.31.0 - 192.168.31.127 /25 Management ip 192.168.99.7
+		632	192.168.32.0 - 192.168.32.127 /25 Management ip 192.168.99.7
+		600	192.168.10.0 - 192.168.1.127 /26 Management ip 192.168.99.8
+		1hæð	Management ip 192.168.99.9
+		2hæð	Management ip 192.168.99.10
+		3hæð	Management ip 192.168.99.11
+		vörðuswitch	Management ip 192.168.99.12
+		699	192.168.99.0 - 192.168.99.63 /26Vörðu skóli:
+	Gera Vlan        	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Trunking	 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ip fyrir management	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Default gateway		621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ssh			621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Password pass.123	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Slökkva á portum 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Port security
+	Net:
+		621	192.168.21.0 - 192.168.21.127 /25 Management ip 192.168.99.2
+		622	192.168.22.0 - 192.168.22.127 /25 Management ip 192.168.99.2
+		623	192.168.23.0 - 192.168.23.127 /25 Management ip 192.168.99.3
+		624	192.168.24.0 - 192.168.24.127 /25 Management ip 192.168.99.3
+		625	192.168.25.0 - 192.168.25.127 /25 Management ip 192.168.99.4
+		626	192.168.26.0 - 192.168.26.127 /25 Management ip 192.168.99.4
+		627	192.168.27.0 - 192.168.27.127 /25 Management ip 192.168.99.5
+		628	192.168.28.0 - 192.168.28.127 /25 Management ip 192.168.99.5
+		629	192.168.29.0 - 192.168.29.127 /25 Management ip 192.168.99.6
+		630	192.168.30.0 - 192.168.30.127 /25 Management ip 192.168.99.6
+		631	192.168.31.0 - 192.168.31.127 /25 Management ip 192.168.99.7
+		632	192.168.32.0 - 192.168.32.127 /25 Management ip 192.168.99.7
+		600	192.168.10.0 - 192.168.1.127 /26 Management ip 192.168.99.8
+		1hæð	Management ip 192.168.99.9
+		2hæð	Management ip 192.168.99.10
+		3hæð	Management ip 192.168.99.11
+		vörðuswitch	Management ip 192.168.99.12

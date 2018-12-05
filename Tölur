@@ -77,13 +77,13 @@ Hátdegisvegur
 		main Management ip 192.168.99.198
     
 Vörðu skóli:
-	Gera Vlan        	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Gera Trunking	 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Ip fyrir management	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Default gateway		621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Ssh			621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Password pass.123	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Slökkva á portum 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Vlan        	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Trunking	 	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ip fyrir management	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Default gateway		621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ssh			621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Password pass.123	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Slökkva á portum 	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
 	Port security
 	Net:
 		621	192.168.21.0 - 192.168.21.127 /25 Management ip 192.168.99.2
@@ -104,13 +104,13 @@ Vörðu skóli:
 		3hæð	Management ip 192.168.99.11
 		vörðuswitch	Management ip 192.168.99.12
 		699	192.168.99.0 - 192.168.99.63 /26Vörðu skóli:
-	Gera Vlan        	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Gera Trunking	 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Ip fyrir management	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Default gateway		621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Ssh			621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Password pass.123	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
-	Slökkva á portum 	621 og 622, 623 og 624, 625 og 626, starfsmenn, 627 og 628, 629 og 630, 631 og 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Vlan        	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Gera Trunking	 	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ip fyrir management	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Default gateway		621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Ssh			621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Password pass.123	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
+	Slökkva á portum 	621 - 626, starfsmenn, 627 - 632, hæð 1, hæð2, hæð3, vörðuswitch
 	Port security
 	Net:
 		621	192.168.21.0 - 192.168.21.127 /25 Management ip 192.168.99.2
@@ -125,7 +125,7 @@ Vörðu skóli:
 		630	192.168.30.0 - 192.168.30.127 /25 Management ip 192.168.99.6
 		631	192.168.31.0 - 192.168.31.127 /25 Management ip 192.168.99.7
 		632	192.168.32.0 - 192.168.32.127 /25 Management ip 192.168.99.7
-		600	192.168.10.0 - 192.168.1.127 /26 Management ip 192.168.99.8
+		600	192.168.10.0 - 192.168.1.127  /26 Management ip 192.168.99.8
 		1hæð	Management ip 192.168.99.9
 		2hæð	Management ip 192.168.99.10
 		3hæð	Management ip 192.168.99.11

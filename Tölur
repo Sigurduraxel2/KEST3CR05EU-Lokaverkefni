@@ -39,33 +39,55 @@ Server Net:
   
 Hafnarfjörður:
 	Gera Vlan		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Gera Trunking		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Ip fyrir management	701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Default gateway		701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Ssh			701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Slökkva á portum	701 og 702, 703 og 704, 705 og 706, starfsmenn, main
+	
 	Password pass.123       701 og 702, 703 og 704, 705 og 706, starfsmenn, main
 	Port security
+	
+	
 	Net:
 		701	192.168.71.0 - 192.168.71.127 /25 Management ip 192.168.99.130
+		
 		702	192.168.72.0 - 192.168.72.127 /25 Management ip 192.168.99.130
+		
 		703	192.168.73.0 - 192.168.73.127 /25 Management ip 192.168.99.131
+		
 		704	192.168.74.0 - 192.168.74.127 /25 Management ip 192.168.99.131
+		
 		705	192.168.75.0 - 192.168.75.127 /25 Management ip 192.168.99.132
+		
 		706	192.168.76.0 - 192.168.76.127 /25 Management ip 192.168.99.132
+		
 		starfs	192.168.10.128 - 192.168.10.191 /26 Management ip 192.168.99.133
+		
 		main Management ip 192.168.99.134
     
     
 Hátdegisvegur
 	Gera Vlan		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Gera Trunking		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Ip fyrir management	801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Default gateway		801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Ssh			801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Slökkva á portum	801 og 802, 803 og 804, 805 og 806, stafsmenn
+	
 	Password pass.123       
 	Port security
+	
 	Net:
 		801	192.168.128.0 - 192.168.128.127 /25 Management ip 192.168.99.194
 		802	192.168.129.0 - 192.168.129.127 /25 Management ip 192.168.99.194
